@@ -9,8 +9,7 @@ return (<div>
    <div className='control-section'>
       <PdfViewerComponent 
             id="container" 
-            documentPath="PDF_Succinctly.pdf"
-            serviceUrl="https://ej2services.syncfusion.com/production/web-services/api/pdfviewer" 
+            documentPath="https://cdn.syncfusion.com/content/pdf/pdf-succinctly.pdf"
             style={{ 'height': '640px' }}>
 
                <Inject services={[ Toolbar, Magnification, Navigation, Annotation, LinkAnnotation, BookmarkView, 
