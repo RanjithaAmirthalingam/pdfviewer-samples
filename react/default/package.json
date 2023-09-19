@@ -1,28 +1,39 @@
 {
-  "name": "8gwkb5--run",
-  "version": "0.0.0",
+  "name": "default",
+  "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "react": "18.1.0",
-    "react-dom": "18.1.0",
-    "@syncfusion/ej2-base": "23.1.36",
-    "@syncfusion/ej2-pdfviewer": "23.1.36",
-    "@syncfusion/ej2-react-base": "23.1.36",
-    "@syncfusion/ej2-react-pdfviewer": "23.1.36",
-    "@syncfusion/ej2-buttons": "23.1.36",
-    "@syncfusion/ej2-react-buttons": "23.1.36",
-    "@syncfusion/ej2-lists": "23.1.36",
-    "@syncfusion/ej2-documenteditor": "23.1.36",
-    "@syncfusion/ej2-splitbuttons": "23.1.36",
-    "@syncfusion/ej2-navigations": "23.1.36"
+    "@syncfusion/ej2-react-pdfviewer": "^23.1.36",
+    "@testing-library/jest-dom": "^5.17.0",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "5.0.1",
+    "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "devDependencies": {
-    "react-scripts": "latest"
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
