@@ -1,20 +1,27 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-// import the PdfViewer Module for the PDF Viewer component
-import { PdfViewerModule, LinkAnnotationService, BookmarkViewService,
-         MagnificationService, ThumbnailViewService, ToolbarService,
-         NavigationService, TextSearchService, TextSelectionService,
-         PrintService
-       } from '@syncfusion/ej2-angular-pdfviewer';
-import { AppComponent } from './app.component';
+import { SwitchModule } from '@syncfusion/ej2-angular-buttons';
 
-@NgModule({
-  //declaration of ej2-angular-pdfviewer module into NgModule
-  imports: [BrowserModule, PdfViewerModule],
-  declarations: [AppComponent],
-  bootstrap: [AppComponent],
-  providers: [ LinkAnnotationService, BookmarkViewService, MagnificationService,
-               ThumbnailViewService, ToolbarService, NavigationService,
-               TextSearchService, TextSelectionService, PrintService]
+import { MessageModule } from '@syncfusion/ej2-angular-notifications';
+
+import { ButtonModule, CheckBoxModule } from '@syncfusion/ej2-angular-buttons';
+
+import { ToolbarModule } from '@syncfusion/ej2-angular-navigations';
+
+import { DialogModule } from '@syncfusion/ej2-angular-popups';
+
+import { PdfViewerModule } from '@syncfusion/ej2-angular-pdfviewer';
+
+import { HttpModule } from '@angular/http';
+
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+import { RouterModule } from '@angular/router';
+
+import { CommonModule } from '@angular/common';
+
+import { BrowserModule } from '@angular/platform-browser';
+
+import { NgModule } from '@angular/core';
+import { AppComponent } from '../app.component';
+@NgModule({ declarations: [ AppComponent ], imports: [ PdfViewerModule, ToolbarModule, DialogModule,MessageModule,SwitchModule, BrowserModule], providers: [], bootstrap: [AppComponent]
 })
 export class AppModule { }
